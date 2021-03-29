@@ -1,0 +1,34 @@
+{
+  "name": "Spree Commerce Demo",
+  "description": "Spree is a complete open source e-commerce solution built with Ruby on Rails",
+  "keywords": [
+    "spree commerce",
+    "spree",
+    "ecommerce",
+    "rails ecommerce"
+  ],
+  "logo": "https://spreecommerce.org/wp-content/uploads/2019/09/spree-60x60@2x.png",
+  "website": "https://spreecommerce.org",
+  "repository": "https://github.com/dillontiner/spree-starter-blog-post",
+  "env": {
+  },
+  "formation": {
+  },
+  "scripts": {
+    "postdeploy": "bundle exec rails db:seed"
+  },
+  "addons": [
+    "memcachedcloud",
+    "papertrail",
+    "heroku-postgresql",
+    "rediscloud",
+    "sendgrid",
+    "sentry",
+    "scout"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
